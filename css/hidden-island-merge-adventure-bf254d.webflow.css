@@ -1699,12 +1699,11 @@ figcaption {
 .home-image-character-monkey {
   position: absolute;
   left: auto;
-  top: -64%;
-  right: -27%;
+  top: -81%;
+  right: -50%;
   bottom: auto;
   z-index: 1;
-  width: 36%;
-  max-width: none;
+  width: 53%;
 }
 
 .app-screenshot {
@@ -1911,11 +1910,11 @@ figcaption {
 .home-image-character-necklace {
   position: absolute;
   left: auto;
-  top: -184%;
-  right: 5%;
+  top: -229%;
+  right: 24%;
   bottom: auto;
   z-index: 1;
-  width: 40%;
+  width: 53%;
   max-width: none;
 }
 
@@ -1966,8 +1965,6 @@ figcaption {
 
   .home-image-character-monkey {
     right: -28%;
-    max-height: 160px;
-    max-width: 136px;
   }
 
   .background-black._2 {
@@ -1989,13 +1986,12 @@ figcaption {
 
 @media screen and (min-width: 1440px) {
   .home-image-character-monkey {
-    top: -71%;
-    right: -28%;
-    width: 100%;
+    top: -89%;
+    right: -59%;
   }
 
   .home-image-character-necklace {
-    right: 10%;
+    right: 28%;
     width: 100%;
   }
 
