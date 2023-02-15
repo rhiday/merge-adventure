@@ -1613,13 +1613,24 @@ figcaption {
   color: #fff;
 }
 
+.section-home-header {
+  height: 75vh;
+  background-image: url('../images/banner-small-edited-minified.webp');
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .section-home-bg {
   width: 100%;
-  height: 400px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: 50% 0%;
   object-position: 50% 0%;
+}
+
+.section-home-bg.show-mobile-portrait {
+  display: none;
 }
 
 .test {
@@ -1632,7 +1643,6 @@ figcaption {
 }
 
 .section-feature-grid {
-  position: relative;
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
@@ -1866,14 +1876,20 @@ figcaption {
 }
 
 .section-feature-gems-grid {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   justify-items: end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 12.5rem;
@@ -1895,7 +1911,7 @@ figcaption {
 .home-image-character-necklace {
   position: absolute;
   left: auto;
-  top: -81%;
+  top: -184%;
   right: 5%;
   bottom: auto;
   z-index: 1;
@@ -1959,7 +1975,6 @@ figcaption {
   }
 
   .home-image-character-necklace {
-    top: -84%;
     right: 16%;
     max-height: 160px;
     max-width: 136px;
@@ -1974,12 +1989,12 @@ figcaption {
 
 @media screen and (min-width: 1440px) {
   .home-image-character-monkey {
+    top: -71%;
     right: -28%;
     width: 100%;
   }
 
   .home-image-character-necklace {
-    top: -97%;
     right: 10%;
     width: 100%;
   }
@@ -2173,7 +2188,7 @@ figcaption {
   }
 
   .section-home-bg {
-    height: 360px;
+    height: 330px;
   }
 
   .section-feature-grid {
@@ -2203,8 +2218,14 @@ figcaption {
     width: 40%;
   }
 
+  .section-feature-gems-grid {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
   .home-image-character-necklace {
-    top: -89%;
     width: 42%;
   }
 
@@ -2484,7 +2505,7 @@ figcaption {
 
   .section-home-bg {
     position: relative;
-    height: 300px;
+    height: 246px;
   }
 
   .section-feature-grid {
@@ -2555,6 +2576,7 @@ figcaption {
   }
 
   .home-image-character-necklace {
+    top: -240%;
     right: -15%;
     width: 30%;
   }
@@ -2672,14 +2694,21 @@ figcaption {
     width: 96%;
   }
 
-  .app-store-btn {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+  .section-home-header {
+    height: 50vh;
+  }
+
+  .section-home-bg {
+    height: 249px;
+  }
+
+  .section-home-bg.show-mobile-portrait {
+    z-index: 11;
+    display: block;
   }
 
   .home-image-character-monkey {
+    top: -41%;
     right: 20%;
     width: 26%;
   }
@@ -2708,6 +2737,7 @@ figcaption {
   }
 
   .home-image-character-necklace {
+    top: -117px;
     right: 19%;
     width: 26%;
   }
@@ -2741,17 +2771,6 @@ figcaption {
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
   grid-column-end: span 1;
-}
-
-#w-node-_4d95845b-d833-7a91-add7-d62e59901083-24d68b88 {
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-column-span: 1;
-  grid-column-end: 3;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-  -ms-grid-row-span: 2;
-  grid-row-end: 3;
 }
 
 #w-node-_06e6e056-f407-d061-3d46-60c83e425a5f-24d68b88 {
@@ -2852,14 +2871,6 @@ figcaption {
 }
 
 #w-node-de558182-4edd-dabd-4bf5-f25c60978911-24d68b88 {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-column-span: 2;
-  grid-column-end: 3;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
   -ms-grid-column-align: end;
   justify-self: end;
 }
