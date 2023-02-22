@@ -1614,7 +1614,7 @@ figcaption {
 }
 
 .section-home-header {
-  height: 75vh;
+  height: 80vh;
   background-image: url('../images/banner-small-edited-minified.webp');
   background-position: 50% 0%;
   background-size: cover;
@@ -1959,6 +1959,10 @@ figcaption {
 }
 
 @media screen and (min-width: 1280px) {
+  .section-home-header {
+    height: 82vh;
+  }
+
   .section-feature-grid._1280 {
     margin-top: 7.5rem;
   }
@@ -1985,6 +1989,11 @@ figcaption {
 }
 
 @media screen and (min-width: 1440px) {
+  .section-home-header {
+    height: 95vh;
+    background-position: 50% 12%;
+  }
+
   .home-image-character-monkey {
     top: -89%;
     right: -59%;
@@ -2880,8 +2889,8 @@ figcaption {
   grid-row-start: 1;
   -ms-grid-row-span: 2;
   grid-row-end: 3;
-  -ms-grid-column-align: end;
-  justify-self: end;
+  -ms-grid-column-align: center;
+  justify-self: center;
   -webkit-box-ordinal-group: 10000;
   -webkit-order: 9999;
   -ms-flex-order: 9999;
@@ -3348,6 +3357,13 @@ figcaption {
 #w-node-_32eadc24-e391-a089-abe0-fb5b6627cdc7-efd68b8b {
   -ms-grid-column-align: start;
   justify-self: start;
+}
+
+@media screen and (min-width: 1920px) {
+  #w-node-_6a0219b7-d065-2f03-a4c4-afff4c4aa7a0-24d68b88 {
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
 }
 
 @media screen and (min-width: 1440px) {
